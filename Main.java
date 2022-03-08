@@ -20,17 +20,6 @@ public class Main extends Application {
 			Parent root = loader.load();
 			Controller controller = loader.getController();
 			Scene scene = new Scene(root);
-			
-			scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-
-				@Override
-				public void handle(KeyEvent event) {
-					// TODO Auto-generated method stub
-					
-				}
-			});
-			
-			
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			stage.setResizable(false);
 			stage.setScene(scene);
